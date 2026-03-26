@@ -36,6 +36,8 @@ COMPANY REQUIREMENTS
 - Budget: ₹{budget}
 - Category: {category}
 - Location: {location}
+- Start Date: {timeline_start}
+- End Date: {timeline_end}
 - Timeline: {timeline_start} to {timeline_end}
 - Milestones: {milestone_count}
 - user defined Milestone Details: {milestone_info}
@@ -88,10 +90,11 @@ OUTPUT FORMAT
       "title": "string",
 
       "description": "clear explanation of how the campaign will be executed in {location}",
+      "category": "{category}",   
+      "location": "{location}",
+      "budget_inr": {budget},
 
-      "estimated_budget": {budget},
-
-      "budgetBreakdown": {{
+      "budget_breakdown": {{
         "infrastructure": 0,
         "training": 0,
         "materials": 0,
@@ -99,12 +102,12 @@ OUTPUT FORMAT
         "contingency": 0
       }},
 
-      "scheduleVII": "one of the categories",
+      "schedule_vii": "one of the categories",
 
-      "sdgAlignment": [1, 4],
+      "sdg_alignment": [1, 4],
       "start_date": "{timeline_start}",
       "end_date": "{timeline_end}",
-      "impactMetrics": {{
+      "impact_metrics": {{
         "beneficiaries": 0,
         "duration": "{timeline_start} to {timeline_end}"
       }},
